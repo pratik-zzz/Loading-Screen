@@ -124,3 +124,10 @@ body {
         transform: translateX(0);
     }
 }
+
+@media (max-width: 822px) {
+    .container {
+        height: 90vw;
+        width: 90vw;
+    }
+}
