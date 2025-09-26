@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: black;
+    height: 90vh;
+    width: 90vh;
+}
+
+.element {
+    background-color: #90ffda;
+    border-radius: 50%;
+}
+
+#vertical-top {
+    grid-column: 2;
+    grid-row: 1;
+    animation-name: slide-vertical-top;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+#vertical-bottom {
+    grid-column: 2;
+    grid-row: 3;
+    animation-name: slide-vertical-bottom;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+#horizontal-left {
+    grid-column: 1;
+    grid-row: 2;
+    animation-name: slide-horizontal-left;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+#horizontal-right {
+    grid-column: 3;
+    grid-row: 2;
+    animation-name: slide-horizontal-right;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes slide-vertical-top {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translate(-100%, 100%)
+    }
+    66% {
+        transform: translateY(100%);
+        background-color: #ff90da;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-vertical-bottom {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translate(100%, -100%)
+    }
+    66% {
+        transform: translateY(-100%);
+        background-color: #FF90da;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-horizontal-left {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translate(100%, 100%)
+    }
+    66% {
+        transform: translateX(100%);
+        background-color: #FF90da;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-horizontal-right {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translate(-100%, -100%)
+    }
+    66% {
+        transform: translateX(-100%);
+        background-color: #FF90da;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
