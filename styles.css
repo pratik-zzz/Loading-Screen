@@ -17,7 +17,7 @@ body {
 }
 
 .element {
-    background-color: #90ffda;
+    background-color: #ccffee;
     border-radius: 50%;
 }
 
@@ -70,7 +70,7 @@ body {
     }
     66% {
         transform: translateY(100%);
-        background-color: #ff90da;
+        background-color: #ffccee;
     }
     100% {
         transform: translateY(0);
@@ -86,7 +86,7 @@ body {
     }
     66% {
         transform: translateY(-100%);
-        background-color: #FF90da;
+        background-color: #FFccee;
     }
     100% {
         transform: translateY(0);
@@ -102,7 +102,7 @@ body {
     }
     66% {
         transform: translateX(100%);
-        background-color: #FF90da;
+        background-color: #FFccee;
     }
     100% {
         transform: translateX(0);
@@ -118,7 +118,7 @@ body {
     }
     66% {
         transform: translateX(-100%);
-        background-color: #FF90da;
+        background-color: #FFccee;
     }
     100% {
         transform: translateX(0);
